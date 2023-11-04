@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const Portfolio = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
   return (
     <motion.div
       initial={{
@@ -19,18 +17,17 @@ const Portfolio = () => {
     >
       <ul className="flex flex-col pl-14">
         <ProjectItem
-          projectTitle="Project Name 1"
+          projectTitle="Project Name"
           projectType="Project Type"
           fileName="./levi.png"
-          setIsVisible={() => setIsVisible}
         />
         <ProjectItem
-          projectTitle="Project Name 2"
+          projectTitle="Project Name"
           projectType="Project Type"
           fileName="./cover-art.png"
         />
         <ProjectItem
-          projectTitle="Project Name 3"
+          projectTitle="Project Name"
           projectType="Project Type"
           fileName="./cover-art.png"
         />

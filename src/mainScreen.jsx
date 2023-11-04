@@ -3,6 +3,7 @@ import Portfolio from "./Pages/Portfolio";
 import About from "./Pages/About";
 import { Route, useLocation, Routes } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import Artwork from "./Components/Artwork";
 
 function MainScreen() {
   const location = useLocation();
