@@ -6,7 +6,6 @@ import { AnimatePresence, motion } from "framer-motion";
 
 function MainScreen() {
   const location = useLocation();
-  console.log(location.pathname);
 
   return (
     <motion.div
