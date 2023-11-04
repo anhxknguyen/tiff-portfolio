@@ -1,6 +1,18 @@
+import { motion } from "framer-motion";
+
 const About = () => {
   return (
-    <div className="flex items-start self-end justify-start w-1/2 overflow-scroll h-3/5 no-scrollbar">
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 0, duration: 0.5 },
+      }}
+      exit={{ opacity: 0, transition: { duration: 0.25 } }}
+      className="flex items-start self-end justify-start w-1/2 overflow-scroll h-3/5 no-scrollbar"
+    >
       <img
         className="fixed object-cover ml-10 transform -translate-x-1/2 -translate-y-1/2 border select-none w-96 h-96 border-textColor left-1/5 top-1/2"
         src="./cover-art.png"
@@ -19,7 +31,7 @@ const About = () => {
         Netus et malesuada fames ac turpis egestas sed tempus urna. Mi eget
         mauris pharetra et.
       </div>
-    </div>
+    </motion.div>
   );
 };
 
