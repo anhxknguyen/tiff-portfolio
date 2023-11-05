@@ -28,7 +28,7 @@ export default {
       },
       backgroundImage: {
         tempBg: "url('./tempbg.png')",
-        lineartTempBg: "url('./lineart-temp-bg.PNG')",
+        lineartTempBg: "url(/lineart-temp-bg.PNG)",
       },
       height: {
         large: "75vh",
