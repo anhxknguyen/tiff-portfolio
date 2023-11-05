@@ -46,6 +46,7 @@ function MainScreen() {
                   projectTitle={project.projectTitle}
                   projectType={project.projectType}
                   fileName={project.fileName}
+                  fileNameMin={project.fileNameMin}
                 />
               }
             />

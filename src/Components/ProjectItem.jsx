@@ -7,7 +7,7 @@ import { UserContext } from "../mainScreen";
 import { useContext } from "react";
 
 // eslint-disable-next-line react/prop-types
-const ProjectItem = ({ projectTitle, projectType, fileName }) => {
+const ProjectItem = ({ projectTitle, projectType, fileName, fileNameMin }) => {
   const [ref, hovering] = useHover();
   const { project, setProject } = useContext(UserContext);
 
@@ -16,6 +16,7 @@ const ProjectItem = ({ projectTitle, projectType, fileName }) => {
       projectTitle: projectTitle,
       projectType: projectType,
       fileName: fileName,
+      fileNameMin: fileNameMin,
     });
   }
 
@@ -33,7 +34,7 @@ const ProjectItem = ({ projectTitle, projectType, fileName }) => {
             }}
             exit={{ opacity: 0, transition: { duration: 0.25 } }}
             className="fixed hidden object-cover ml-10 transform -translate-x-1/2 -translate-y-1/2 border select-none lg:block lg:h-96 hover:cursor-default border-textColor w-image left-1/5 top-1/2"
-            src={fileName}
+            src={fileNameMin}
             alt={projectTitle}
           />
         )}

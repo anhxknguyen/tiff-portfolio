@@ -20,41 +20,49 @@ const Portfolio = () => {
           projectTitle="Project Name"
           projectType="Project Type"
           fileName="./cover-art.png"
+          fileNameMin="./cover-art-min.png"
         />
         <ProjectItem
           projectTitle="Project Name"
           projectType="Project Type"
           fileName="./kokomi.png"
+          fileNameMin="./kokomi-min.png"
         />
         <ProjectItem
           projectTitle="Project Name"
           projectType="Project Type"
           fileName="./girl1.PNG"
+          fileNameMin="./girl1-min.PNG"
         />
         <ProjectItem
           projectTitle="Project Name"
           projectType="Project Type"
           fileName="./girl2.PNG"
+          fileNameMin="./girl2-min.PNG"
         />
         <ProjectItem
           projectTitle="Project Name"
           projectType="Project Type"
           fileName="./girl3.jpg"
+          fileNameMin="./girl3-min.jpg"
         />
         <ProjectItem
           projectTitle="Project Name"
           projectType="Project Type"
           fileName="./girl4.PNG"
+          fileNameMin="./girl4-min.PNG"
         />
         <ProjectItem
           projectTitle="Project Name"
           projectType="Project Type"
           fileName="./venti.PNG"
+          fileNameMin="./venti-min.PNG"
         />
         <ProjectItem
           projectTitle="Project Name"
           projectType="Project Type"
           fileName="./guys.PNG"
+          fileNameMin="./guys-min.PNG"
         />
       </ul>
     </motion.div>
