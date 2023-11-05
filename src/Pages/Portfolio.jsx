@@ -7,49 +7,41 @@ const Portfolio = () => {
       projectTitle: "Spring Day",
       projectType: "Original Work",
       fileName: "./spring-day.png",
-      fileNameMin: "./spring-day-min.png",
     },
     {
       projectTitle: "Paper Cranes",
       projectType: "Original Work",
       fileName: "./paper-cranes.png",
-      fileNameMin: "./paper-cranes-min.png",
     },
     {
       projectTitle: "Venti",
       projectType: "Fanart/Commission",
       fileName: "./venti.PNG",
-      fileNameMin: "./venti-min.PNG",
     },
     {
       projectTitle: "Miya Twins",
       projectType: "Fanart",
       fileName: "./miya-twins.png",
-      fileNameMin: "./miya-twins-min.png",
     },
     {
       projectTitle: "Kokomi",
       projectType: "Fanart",
       fileName: "./kokomi.png",
-      fileNameMin: "./kokomi-min.png",
     },
     {
       projectTitle: "Hanni",
       projectType: "Fanart",
       fileName: "./hanni.jpg",
-      fileNameMin: "./hanni-min.jpg",
     },
     {
       projectTitle: "Orange Justice",
       projectType: "Draft",
-      fileName: "./girl1.PNG",
-      fileNameMin: "./girl1-min.PNG",
+      fileName: "./orange-justice.PNG",
     },
     {
       projectTitle: "Butterfly",
       projectType: "Draft",
       fileName: "./butterfly.png",
-      fileNameMin: "./butterfly-min.png",
     },
   ];
 
@@ -72,7 +64,6 @@ const Portfolio = () => {
             projectTitle={project.projectTitle}
             projectType={project.projectType}
             fileName={project.fileName}
-            fileNameMin={project.fileNameMin}
           />
         ))}
       </ul>
