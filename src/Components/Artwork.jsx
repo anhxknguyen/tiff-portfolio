@@ -34,7 +34,7 @@ const Artwork = ({ projectTitle, projectType, fileName, handleClick }) => {
 
       <div className="flex flex-col items-center justify-center my-10 text-left lg:h-full lg:flex-row">
         <div className="flex flex-col items-center w-full gap-10 lg:justify-center lg:flex-row-reverse h-1/2 lg:h-full">
-          <div className="max-w-med">
+          <div className="max-w-med max-h-veryLarge">
             <motion.img
               initial={{
                 opacity: 0,
@@ -45,7 +45,7 @@ const Artwork = ({ projectTitle, projectType, fileName, handleClick }) => {
               }}
               exit={{ opacity: 0, transition: { duration: 0.25 } }}
               src={fileName}
-              className="object-cover"
+              className="object-cover pb-16"
             />
           </div>
 

@@ -21,6 +21,7 @@ export default {
       spacing: {
         "1/5": "20%",
         "5/6": "83%",
+        veryLarge: "95vh",
         large: "75vh",
         med: "50vh",
         small: "25vh",
@@ -36,7 +37,7 @@ export default {
       maxWidth: {
         image: "28rem",
         large: "75vw",
-        med: "50vw",
+        med: "65vw",
         small: "25vw",
       },
       padding: {
