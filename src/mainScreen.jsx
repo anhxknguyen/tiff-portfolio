@@ -11,11 +11,10 @@ export const UserContext = React.createContext(null);
 
 function MainScreen() {
   const location = useLocation();
-  const [project, setProject] = useState({
-    projectTitle: "",
-    projectType: "",
-    fileName: "",
-  });
+  const [project, setProject] = useState(
+    JSON.parse(localStorage.getItem("project"))
+  );
+
   return (
     <motion.div
       initial={{

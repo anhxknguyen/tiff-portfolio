@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
-const Artwork = ({ projectTitle, projectType, fileName, handleClick }) => {
+const Artwork = ({ projectTitle, projectType, fileName }) => {
+  const currProject = {
+    projectTitle: projectTitle,
+    projectType: projectType,
+    fileName: fileName,
+  };
+
+  localStorage.setItem("project", JSON.stringify(currProject));
   return (
     <motion.div
       initial={{
