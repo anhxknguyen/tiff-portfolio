@@ -26,10 +26,15 @@ export default {
         tempBg: "url('./tempbg.png')",
       },
       height: {
-        large: "40rem",
+        large: "75vh",
+        med: "50vh",
+        small: "25vh",
       },
       width: {
         image: "28rem",
+        large: "75vw",
+        med: "50vw",
+        small: "25vw",
       },
       padding: {
         "1/2": "14%",

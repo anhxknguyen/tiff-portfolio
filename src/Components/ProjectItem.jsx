@@ -3,20 +3,24 @@ import { useHover } from "@uidotdev/usehooks";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Artwork from "./Artwork";
+import { UserContext } from "../mainScreen";
+import { useContext } from "react";
 
 // eslint-disable-next-line react/prop-types
 const ProjectItem = ({ projectTitle, projectType, fileName }) => {
   const [ref, hovering] = useHover();
-  const [showProject, setShowProject] = useState(false);
+  const { project, setProject } = useContext(UserContext);
 
   function handleClick() {
-    console.log(showProject);
-    setShowProject((oldShowProject) => !oldShowProject);
-    console.log(showProject);
+    setProject({
+      projectTitle: projectTitle,
+      projectType: projectType,
+      fileName: fileName,
+    });
   }
 
   return (
-    <div h-full>
+    <div className="w-full h-full">
       <AnimatePresence>
         {hovering && (
           <motion.img
@@ -37,21 +41,12 @@ const ProjectItem = ({ projectTitle, projectType, fileName }) => {
       <NavLink
         className="flex flex-col gap-3 py-5 hover:text-hoverColor hover:cursor-pointer"
         ref={ref}
+        to="/artwork"
         onClick={handleClick}
       >
         <h1 className="text-5xl">{projectTitle}</h1>
         <h2 className="text-xl">{projectType}</h2>
       </NavLink>
-      <AnimatePresence>
-        {showProject && (
-          <Artwork
-            projectTitle={projectTitle}
-            projectType={projectType}
-            fileName={fileName}
-            handleClick={handleClick}
-          />
-        )}
-      </AnimatePresence>
     </div>
   );
 };
