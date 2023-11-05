@@ -18,8 +18,8 @@ const Portfolio = () => {
     {
       projectTitle: "Venti",
       projectType: "Fanart/Commission",
-      fileName: "./venti.png",
-      fileNameMin: "./venti-min.png",
+      fileName: "./venti.PNG",
+      fileNameMin: "./venti-min.PNG",
     },
     {
       projectTitle: "Miya Twins",
