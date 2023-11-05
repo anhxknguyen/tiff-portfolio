@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
-const Artwork = ({ projectTitle, projectType, fileName }) => {
+const Artwork = ({ projectTitle, projectType, fileName, fileNameMin }) => {
   const currProject = {
     projectTitle: projectTitle,
     projectType: projectType,
     fileName: fileName,
+    fileNameMin: fileNameMin,
   };
 
   localStorage.setItem("project", JSON.stringify(currProject));
@@ -19,7 +20,7 @@ const Artwork = ({ projectTitle, projectType, fileName }) => {
         transition: { delay: 0, duration: 0.25 },
       }}
       exit={{ opacity: 0, transition: { duration: 0.25 } }}
-      className="absolute top-0 left-0 w-screen h-full px-10 overflow-scroll lg:overflow-scroll innerScreenHeight bg-artBg text-artTextColor"
+      className="absolute top-0 left-0 w-screen h-full px-5 pt-10 overflow-scroll lg:pt-0 lg:overflow-scroll innerScreenHeight bg-artBg text-artTextColor"
     >
       <motion.div
         initial={{
@@ -52,7 +53,7 @@ const Artwork = ({ projectTitle, projectType, fileName }) => {
               }}
               exit={{ opacity: 0, transition: { duration: 0.25 } }}
               src={fileName}
-              className="object-cover pb-16"
+              className="object-cover lg:pb-16"
             />
           </div>
 
