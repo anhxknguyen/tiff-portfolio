@@ -20,10 +20,18 @@ const ProjectItem = ({ projectTitle, projectType, fileName, fileNameMin }) => {
     });
   }
 
+  function isTouchDevice() {
+    return (
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0
+    );
+  }
+
   return (
     <div className="w-full h-full">
       <AnimatePresence>
-        {hovering && (
+        {hovering && isTouchDevice() == false && (
           <motion.img
             initial={{
               opacity: 0,
