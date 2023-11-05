@@ -6,26 +6,26 @@ const Portfolio = () => {
     {
       projectTitle: "Spring Day",
       projectType: "Original Work",
-      fileName: "./cover-art.png",
-      fileNameMin: "./cover-art-min.png",
+      fileName: "./spring-day.png",
+      fileNameMin: "./spring-day-min.png",
     },
     {
       projectTitle: "Paper Cranes",
       projectType: "Original Work",
-      fileName: "./girl4.PNG",
-      fileNameMin: "./girl4-min.PNG",
+      fileName: "./paper-cranes.png",
+      fileNameMin: "./paper-cranes-min.png",
     },
     {
       projectTitle: "Venti",
       projectType: "Fanart/Commission",
-      fileName: "./venti.PNG",
-      fileNameMin: "./venti-min.PNG",
+      fileName: "./venti.png",
+      fileNameMin: "./venti-min.png",
     },
     {
       projectTitle: "Miya Twins",
       projectType: "Fanart",
-      fileName: "./guys.PNG",
-      fileNameMin: "./guys-min.PNG",
+      fileName: "./miya-twins.png",
+      fileNameMin: "./miya-twins-min.png",
     },
     {
       projectTitle: "Kokomi",
@@ -36,8 +36,8 @@ const Portfolio = () => {
     {
       projectTitle: "Hanni",
       projectType: "Fanart",
-      fileName: "./girl3.jpg",
-      fileNameMin: "./girl3-min.jpg",
+      fileName: "./hanni.jpg",
+      fileNameMin: "./hanni-min.jpg",
     },
     {
       projectTitle: "Orange Justice",
@@ -48,8 +48,8 @@ const Portfolio = () => {
     {
       projectTitle: "Butterfly",
       projectType: "Draft",
-      fileName: "./girl2.PNG",
-      fileNameMin: "./girl2-min.PNG",
+      fileName: "./butterfly.png",
+      fileNameMin: "./butterfly-min.png",
     },
   ];
 

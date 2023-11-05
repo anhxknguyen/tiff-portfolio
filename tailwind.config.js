@@ -9,7 +9,7 @@ export default {
       },
       colors: {
         textColor: "#9B6D6D",
-        backgroundColor: "#FFF5F5",
+        backgroundColor: "55",
         selectedColor: "#D67979",
         artBg: "#2B2222",
         hoverColor: "#F6B8B8",
@@ -28,6 +28,7 @@ export default {
       },
       backgroundImage: {
         tempBg: "url('./tempbg.png')",
+        lineartTempBg: "url('./lineartTempBg.png')",
       },
       height: {
         large: "75vh",

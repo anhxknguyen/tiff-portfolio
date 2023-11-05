@@ -15,8 +15,8 @@ const About = () => {
     >
       <img
         className="object-cover border select-none max-w-large lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:ml-10 lg:fixed w-96 h-96 border-textColor lg:left-1/5 lg:top-1/2"
-        src="./cover-art.png"
-        alt="placeholder"
+        src="./venti-min.png"
+        alt="profile picture"
       />
       <div className="flex items-start justify-center lg:justify-start lg:items-center h-fit lg:h-full lg:w-2/3 lg:pb-20 lg:pl-14">
         <p className="w-2/3 lg:w-full">

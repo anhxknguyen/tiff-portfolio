@@ -32,3 +32,11 @@ html,
     }
   }
 }
+
+.lowOpacityBg {
+  background-image: linear-gradient(
+    rgba(255, 245, 245, 0.1),
+    rgba(255, 245, 245, 0.1),
+    url("lineartBgTemp.png")
+  );
+}
