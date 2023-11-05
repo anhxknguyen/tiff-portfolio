@@ -11,9 +11,13 @@ export const UserContext = React.createContext(null);
 
 function MainScreen() {
   const location = useLocation();
-  const [project, setProject] = useState(
-    JSON.parse(localStorage.getItem("project"))
-  );
+  if (JSON.parse(localStorage.getItem("project")) === null) {
+    var [project, setProject] = useState({});
+  } else {
+    var [project, setProject] = useState(
+      JSON.parse(localStorage.getItem("project"))
+    );
+  }
 
   return (
     <motion.div

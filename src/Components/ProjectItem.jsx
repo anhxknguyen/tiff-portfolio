@@ -12,7 +12,6 @@ const ProjectItem = ({ projectTitle, projectType, fileName }) => {
   const { project, setProject } = useContext(UserContext);
 
   function handleClick() {
-    localStorage.setItem("project", JSON.stringify(project));
     setProject({
       projectTitle: projectTitle,
       projectType: projectType,
