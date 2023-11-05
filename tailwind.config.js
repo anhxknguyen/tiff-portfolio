@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        msm: "400px",
+      },
       fontFamily: {
         titleFont: ["titleFont", "sans-serif"],
         textFont: ["textFont", "sans-serif"],

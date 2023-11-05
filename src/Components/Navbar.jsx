@@ -8,7 +8,7 @@ const Navbar = ({ current }) => {
         Tiffany Xiang
       </h1>
       <div className="flex h-full lg:flex-row lg:w-1/2 lg:self-end">
-        <ul className="flex pb-4 text-3xl border-b sm:pb-8 sm:text-4xl gap-11 lg:w-11/12 lg:self-end border-textColor h-fit">
+        <ul className="flex pb-4 text-xl border-b msm:text-3xl sm:pb-8 sm:text-4xl gap-11 lg:w-11/12 lg:self-end border-textColor h-fit">
           {current === "/about" ? (
             <NavLink
               to="/about"
