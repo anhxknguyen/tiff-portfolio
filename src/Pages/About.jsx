@@ -11,7 +11,7 @@ const About = () => {
         transition: { delay: 0, duration: 0.5 },
       }}
       exit={{ opacity: 0, transition: { duration: 0.25 } }}
-      className="flex flex-col items-center h-full gap-10 my-10 overflow-scroll lg:my-0 lg:gap-0 lg:flex-row lg:w-1/2 lg:justify-start lg:items-start lg:self-end lg:flex h-3/5 no-scrollbar"
+      className="flex flex-col items-center h-full gap-10 pt-5 my-5 overflow-scroll lg:my-0 lg:pt-0 lg:gap-0 lg:flex-row lg:w-1/2 lg:justify-start lg:items-start lg:self-end lg:flex h-3/5 no-scrollbar"
     >
       <img
         className="object-cover border select-none max-w-large lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:ml-10 lg:fixed w-96 h-96 border-textColor lg:left-1/5 lg:top-1/2"
@@ -26,11 +26,6 @@ const About = () => {
           neque aliquam vestibulum morbi. Turpis tincidunt id aliquet risus
           feugiat in ante metus. Enim neque volutpat ac tincidunt vitae semper.
           Cursus risus at ultrices mi tempus imperdiet nulla malesuada.
-          Ultricies mi quis hendrerit dolor magna eget est lorem. Morbi tempus
-          iaculis urna id volutpat lacus. Duis convallis convallis tellus id
-          interdum velit laoreet. Nunc lobortis mattis aliquam faucibus purus in
-          massa tempor. Netus et malesuada fames ac turpis egestas sed tempus
-          urna. Mi eget mauris pharetra et.
         </p>
       </div>
     </motion.div>
