@@ -10,20 +10,27 @@ const Navbar = ({ current }) => {
       <div className="flex h-full lg:flex-row lg:w-1/2 lg:self-end">
         <ul className="flex pb-4 text-3xl border-b sm:pb-8 sm:text-4xl gap-11 lg:w-11/12 lg:self-end border-textColor h-fit">
           {current === "/about" ? (
-            <NavLink to="/about" className="text-selectedColor">
+            <NavLink
+              to="/about"
+              className="line-through hover:text-selectedColor"
+            >
               about
             </NavLink>
           ) : (
-            <NavLink to="/about">about</NavLink>
+            <NavLink to="/about" className="hover:text-selectedColor">
+              about
+            </NavLink>
           )}
           {current === "/" ? (
-            <NavLink to="/" className="text-selectedColor">
+            <NavLink to="/" className="line-through hover:text-selectedColor">
               portfolio
             </NavLink>
           ) : (
-            <NavLink to="/">portfolio</NavLink>
+            <NavLink to="/" className="hover:text-selectedColor">
+              portfolio
+            </NavLink>
           )}
-          <NavLink>resume</NavLink>
+          <NavLink className="hover:text-selectedColor">resume</NavLink>
         </ul>
       </div>
     </div>
