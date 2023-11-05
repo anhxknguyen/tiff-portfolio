@@ -3,10 +3,12 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = ({ current }) => {
   return (
-    <div className="items-center justify-between block w-full mt-16 lg:flex">
-      <h1 className="pl-20 text-7xl font-titleFont">Tiffany Xiang</h1>
-      <div className="self-end w-1/2 h-full">
-        <ul className="self-end block w-11/12 pb-8 text-4xl border-b lg:flex border-textColor gap-11 h-fit">
+    <div className="flex flex-col items-center justify-between block w-full mt-16 lg:flex-row">
+      <h1 className="text-6xl lg:pl-20 sm:text-7xl font-titleFont">
+        Tiffany Xiang
+      </h1>
+      <div className="flex h-full lg:flex-row lg:w-1/2 lg:self-end">
+        <ul className="flex pb-4 text-3xl border-b sm:pb-8 sm:text-4xl gap-11 lg:w-11/12 lg:self-end border-textColor h-fit">
           {current === "/about" ? (
             <NavLink to="/about" className="text-selectedColor">
               about
@@ -20,7 +22,7 @@ const Navbar = ({ current }) => {
             </NavLink>
           ) : (
             <NavLink to="/">portfolio</NavLink>
-          )}{" "}
+          )}
           <NavLink>resume</NavLink>
         </ul>
       </div>

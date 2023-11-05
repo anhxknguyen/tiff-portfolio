@@ -21,6 +21,9 @@ export default {
       spacing: {
         "1/5": "20%",
         "5/6": "83%",
+        large: "75vh",
+        med: "50vh",
+        small: "25vh",
       },
       backgroundImage: {
         tempBg: "url('./tempbg.png')",
@@ -30,7 +33,7 @@ export default {
         med: "50vh",
         small: "25vh",
       },
-      width: {
+      maxWidth: {
         image: "28rem",
         large: "75vw",
         med: "50vw",

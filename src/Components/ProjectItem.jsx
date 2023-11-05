@@ -32,20 +32,20 @@ const ProjectItem = ({ projectTitle, projectType, fileName }) => {
               transition: { delay: 0, duration: 0.5 },
             }}
             exit={{ opacity: 0, transition: { duration: 0.25 } }}
-            className="fixed object-cover h-64 ml-10 transform -translate-x-1/2 -translate-y-1/2 border select-none hover:cursor-default border-textColor w-image left-1/5 top-1/2"
+            className="fixed hidden object-cover ml-10 transform -translate-x-1/2 -translate-y-1/2 border select-none lg:h-96 hover:cursor-default border-textColor w-image left-1/5 top-1/2"
             src={fileName}
             alt={projectTitle}
           />
         )}
       </AnimatePresence>
       <NavLink
-        className="flex flex-col gap-3 py-5 hover:text-hoverColor hover:cursor-pointer"
+        className="flex flex-col gap-2 py-5 lg:gap-3 hover:text-hoverColor hover:cursor-pointer"
         ref={ref}
         to="/artwork"
         onClick={handleClick}
       >
-        <h1 className="text-5xl">{projectTitle}</h1>
-        <h2 className="text-xl">{projectType}</h2>
+        <h1 className="text-4xl sm:text-5xl">{projectTitle}</h1>
+        <h2 className="text-lg sm:text-xl">{projectType}</h2>
       </NavLink>
     </div>
   );
