@@ -14,23 +14,23 @@ const Navbar = ({ current }) => {
               to="/about"
               className="line-through hover:text-selectedColor"
             >
-              about
+              About
             </NavLink>
           ) : (
             <NavLink to="/about" className="hover:text-selectedColor">
-              about
+              About
             </NavLink>
           )}
           {current === "/" ? (
             <NavLink to="/" className="line-through hover:text-selectedColor">
-              portfolio
+              Portfolio
             </NavLink>
           ) : (
             <NavLink to="/" className="hover:text-selectedColor">
-              portfolio
+              Portfolio
             </NavLink>
           )}
-          <NavLink className="hover:text-selectedColor">resume</NavLink>
+          <NavLink className="hover:text-selectedColor">Resume</NavLink>
         </ul>
       </div>
     </div>
