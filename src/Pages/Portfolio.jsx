@@ -57,7 +57,7 @@ const Portfolio = () => {
       exit={{ opacity: 0, transition: { duration: 0.25 } }}
       className="flex items-start self-center justify-center w-full h-full py-5 overflow-scroll text-center lg:justify-start lg:py-10 lg:w-1/2 lg:text-start lg:self-end no-scrollbar"
     >
-      <ul className="flex flex-col items-center lg:items-start lg:pl-14">
+      <ul className="flex flex-col items-center lg:w-full lg:items-start lg:pl-14">
         {projectsList.map((project, index) => (
           <ProjectItem
             key={index}

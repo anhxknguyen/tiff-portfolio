@@ -36,10 +36,12 @@ export default {
         large: "75vh",
         med: "50vh",
         small: "25vh",
+        preview: "26rem",
       },
       maxWidth: {
         image: "28rem",
         large: "75vw",
+        preview: "45vw",
         med: "65vw",
         small: "25vw",
         screen: "100vw",
