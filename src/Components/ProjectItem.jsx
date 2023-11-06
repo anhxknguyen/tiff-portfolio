@@ -46,7 +46,7 @@ const ProjectItem = ({ projectTitle, projectType, fileName }) => {
         )}
       </AnimatePresence>
       <NavLink
-        className="flex flex-col w-full gap-2 py-5 lg:gap-3 hover:text-hoverColor hover:cursor-pointer"
+        className="flex flex-col w-full gap-2 lg:gap-3 hover:text-hoverColor hover:cursor-pointer"
         ref={ref}
         to="/artwork"
         onClick={handleClick}
