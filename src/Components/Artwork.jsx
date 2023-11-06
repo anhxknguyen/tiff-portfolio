@@ -68,11 +68,11 @@ const Artwork = ({ projectTitle, projectType, fileName }) => {
             exit={{ opacity: 0, transition: { duration: 0.25 } }}
             className="flex flex-col w-4/5 gap-5 lg:w-1/3 xl:gap-10 xl:w-1/4"
           >
-            <div className="flex flex-col gap-3 xl:gap-5">
-              <h1 className="self-center text-2xl lg:self-start lg:text-4xl xl:text-6xl">
+            <div className="flex flex-col gap-1 sm:gap-2 xl:gap-5">
+              <h1 className="self-center text-2xl sm:text-4xl lg:self-start xl:text-6xl">
                 {projectTitle}
               </h1>
-              <h2 className="self-center text-lg lg:self-start lg:text-2xl xl:text-3xl">
+              <h2 className="self-center text-lg lg:self-start sm:text-2xl xl:text-3xl">
                 {projectType}
               </h2>
             </div>

@@ -51,7 +51,7 @@ const ProjectItem = ({ projectTitle, projectType, fileName }) => {
         to="/artwork"
         onClick={handleClick}
       >
-        <h1 className="text-4xl sm:text-5xl">{projectTitle}</h1>
+        <h1 className="text-3xl sm:text-5xl">{projectTitle}</h1>
         <h2 className="text-lg sm:text-xl">{projectType}</h2>
       </NavLink>
     </div>
