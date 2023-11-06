@@ -21,7 +21,7 @@ const Navbar = ({ current }) => {
             <NavLink
               to="/about"
               className={`line-through ${
-                isTouchDevice() == false && "sm:hover:text-selectedColor"
+                isTouchDevice() == false && "hover:text-selectedColor"
               }`}
             >
               About
@@ -29,9 +29,7 @@ const Navbar = ({ current }) => {
           ) : (
             <NavLink
               to="/about"
-              className={
-                isTouchDevice() == false && `sm:hover:text-selectedColor`
-              }
+              className={isTouchDevice() == false && `hover:text-selectedColor`}
             >
               About
             </NavLink>
@@ -40,7 +38,7 @@ const Navbar = ({ current }) => {
             <NavLink
               to="/"
               className={`line-through ${
-                isTouchDevice() === false && "sm:hover:text-selectedColor"
+                isTouchDevice() === false && "hover:text-selectedColor"
               }`}
             >
               Portfolio
@@ -48,17 +46,13 @@ const Navbar = ({ current }) => {
           ) : (
             <NavLink
               to="/"
-              className={
-                isTouchDevice() == false && `sm:hover:text-selectedColor`
-              }
+              className={isTouchDevice() == false && `hover:text-selectedColor`}
             >
               Portfolio
             </NavLink>
           )}
           <NavLink
-            className={
-              isTouchDevice() == false && `sm:hover:text-selectedColor`
-            }
+            className={isTouchDevice() == false && `hover:text-selectedColor`}
           >
             Resume
           </NavLink>
