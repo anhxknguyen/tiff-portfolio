@@ -10,10 +10,7 @@ const Navbar = ({ current }) => {
       <div className="flex justify-center w-full h-full lg:justify-start lg:flex-row lg:w-1/2 lg:self-end">
         <ul className="flex justify-center w-full pb-4 text-xl border-b lg:w-11/12 lg:justify-start msm:text-3xl sm:pb-4 sm:text-4xl gap-11 lg:self-end border-textColor h-fit">
           {current === "/about" ? (
-            <NavLink
-              to="/about"
-              className="line-through hover:text-selectedColor"
-            >
+            <NavLink to="/about" className="text-selectedColor">
               About
             </NavLink>
           ) : (
@@ -22,7 +19,7 @@ const Navbar = ({ current }) => {
             </NavLink>
           )}
           {current === "/" ? (
-            <NavLink to="/" className="line-through hover:text-selectedColor">
+            <NavLink to="/" className="text-selectedColor">
               Portfolio
             </NavLink>
           ) : (
