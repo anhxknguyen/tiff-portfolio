@@ -7,6 +7,7 @@ import { useContext } from "react";
 // eslint-disable-next-line react/prop-types
 const ProjectItem = ({ projectTitle, projectType, fileName }) => {
   const [ref, hovering] = useHover();
+  // eslint-disable-next-line no-unused-vars
   const { project, setProject } = useContext(UserContext);
 
   function handleClick() {
