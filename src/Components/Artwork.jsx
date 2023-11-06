@@ -42,7 +42,7 @@ const Artwork = ({ projectTitle, projectType, fileName }) => {
 
       <div className="flex flex-col items-center justify-center my-10 text-left lg:h-full lg:flex-row">
         <div className="flex flex-col items-center w-full gap-10 lg:justify-center lg:flex-row-reverse h-1/2 lg:h-full">
-          <div className="lg:max-w-med max-h-fit lg:max-h-veryLarge">
+          <div className="w-screen lg:max-w-med max-h-fit lg:max-h-veryLarge">
             <motion.img
               initial={{
                 opacity: 0,
