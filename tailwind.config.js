@@ -12,7 +12,7 @@ export default {
       },
       colors: {
         textColor: "#6B4747",
-        backgroundColor: "#FFF5F5",
+        backgroundColor: "#FFFEFE",
         selectedColor: "#D67979",
         artBg: "#2B2222",
         hoverColor: "#F6B8B8",
