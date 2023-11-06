@@ -42,6 +42,7 @@ export default {
         large: "75vw",
         med: "65vw",
         small: "25vw",
+        screen: "100vw",
       },
       padding: {
         "1/2": "14%",

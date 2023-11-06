@@ -1,8 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useHover } from "@uidotdev/usehooks";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
-import Artwork from "./Artwork";
 import { UserContext } from "../mainScreen";
 import { useContext } from "react";
 
