@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
+// eslint-disable-next-line react/prop-types
 const Artwork = ({ projectTitle, projectType, fileName }) => {
   const currProject = {
     projectTitle: projectTitle,
@@ -19,7 +20,7 @@ const Artwork = ({ projectTitle, projectType, fileName }) => {
         transition: { delay: 0, duration: 0.25 },
       }}
       exit={{ opacity: 0, transition: { duration: 0.25 } }}
-      className="absolute top-0 left-0 w-screen h-full px-5 pt-10 overflow-scroll no-scrollbar lg:pt-0 lg:overflow-scroll innerScreenHeight bg-artBg text-artTextColor"
+      className="absolute top-0 left-0 w-screen h-full px-5 pt-10 overflow-scroll lg:no-scrollbar lg:pt-0 lg:overflow-scroll innerScreenHeight bg-artBg text-artTextColor"
     >
       <motion.div
         initial={{
@@ -41,7 +42,7 @@ const Artwork = ({ projectTitle, projectType, fileName }) => {
 
       <div className="flex flex-col items-center justify-center my-10 text-left lg:h-full lg:flex-row">
         <div className="flex flex-col items-center w-full gap-10 lg:justify-center lg:flex-row-reverse h-1/2 lg:h-full">
-          <div className="lg:max-w-med max-h-fit">
+          <div className="lg:max-w-med max-h-fit lg:max-h-veryLarge">
             <motion.img
               initial={{
                 opacity: 0,
