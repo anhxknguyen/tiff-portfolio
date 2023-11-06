@@ -11,7 +11,7 @@ export default {
         textFont: ["textFont", "sans-serif"],
       },
       colors: {
-        textColor: "#9B6D6D",
+        textColor: "#6B4747",
         backgroundColor: "#FFF5F5",
         selectedColor: "#D67979",
         artBg: "#2B2222",

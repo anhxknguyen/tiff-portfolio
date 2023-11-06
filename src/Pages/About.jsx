@@ -11,15 +11,15 @@ const About = () => {
         transition: { delay: 0, duration: 0.5 },
       }}
       exit={{ opacity: 0, transition: { duration: 0.25 } }}
-      className="flex flex-col items-center h-full gap-10 pt-5 my-5 overflow-scroll lg:my-0 lg:pt-0 lg:gap-0 lg:flex-row lg:w-1/2 lg:justify-start lg:items-start lg:self-end lg:flex h-3/5 no-scrollbar"
+      className="flex flex-col items-center h-full gap-10 my-10 overflow-scroll msm:my-15 md:my-20 lg:my-0 lg:gap-0 lg:flex-row lg:w-1/2 lg:justify-start lg:items-start lg:self-end lg:flex h-3/5 no-scrollbar"
     >
       <img
-        className="object-cover border select-none max-w-large lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:ml-10 lg:fixed w-96 h-96 border-textColor lg:left-1/5 lg:top-1/2"
+        className="object-cover border select-none max-w-large lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:ml-10 lg:fixed sm:h-96 border-textColor lg:left-1/5 lg:top-1/2"
         src="./profile.jpg"
         alt="profile picture"
       />
-      <div className="flex items-start justify-center lg:justify-start lg:items-center h-fit lg:h-full lg:w-2/3 lg:pb-20 lg:pl-14">
-        <p className="w-2/3 xl:text-lg lg:w-full">
+      <div className="flex items-start justify-center h-1/5 lg:justify-start lg:items-center lg:h-full lg:w-2/3 lg:pb-20 lg:pl-14">
+        <p className="w-2/3 text-base sm:text-lg xl:text-xl lg:w-full">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo
           donec enim diam vulputate ut pharetra sit. Nulla porttitor massa id
