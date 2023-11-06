@@ -2,6 +2,14 @@
 import { NavLink } from "react-router-dom";
 
 const Navbar = ({ current }) => {
+  function isTouchDevice() {
+    return (
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0
+    );
+  }
+
   return (
     <div className="flex flex-col items-center justify-between block w-full mt-5 lg:mt-10 lg:flex-row">
       <h1 className="hidden lg:pl-20 lg:block sm:text-7xl font-titleFont">
@@ -12,25 +20,48 @@ const Navbar = ({ current }) => {
           {current === "/about" ? (
             <NavLink
               to="/about"
-              className="line-through hover:text-selectedColor"
+              className={`line-through ${
+                isTouchDevice() == false && "sm:hover:text-selectedColor"
+              }`}
             >
               About
             </NavLink>
           ) : (
-            <NavLink to="/about" className="hover:text-selectedColor">
+            <NavLink
+              to="/about"
+              className={
+                isTouchDevice() == false && `sm:hover:text-selectedColor`
+              }
+            >
               About
             </NavLink>
           )}
           {current === "/" ? (
-            <NavLink to="/" className="line-through hover:text-selectedColor">
+            <NavLink
+              to="/"
+              className={`line-through ${
+                isTouchDevice() === false && "sm:hover:text-selectedColor"
+              }`}
+            >
               Portfolio
             </NavLink>
           ) : (
-            <NavLink to="/" className="hover:text-selectedColor">
+            <NavLink
+              to="/"
+              className={
+                isTouchDevice() == false && `sm:hover:text-selectedColor`
+              }
+            >
               Portfolio
             </NavLink>
           )}
-          <NavLink className="hover:text-selectedColor">Resume</NavLink>
+          <NavLink
+            className={
+              isTouchDevice() == false && `sm:hover:text-selectedColor`
+            }
+          >
+            Resume
+          </NavLink>
         </ul>
       </div>
     </div>
