@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/styles.css";
 import MainScreen from "./mainScreen.jsx";
 import { HashRouter as BrowserRouter } from "react-router-dom";
 
 let vh = window.innerHeight * 0.01;
-let onloadWidth = window.outerWidth;
+const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
 document.documentElement.style.setProperty("--vh", `${vh}px`);
 window.addEventListener("resize", () => {
-  if (window.outerWidth != onloadWidth) {
+  let currWidth = windowWidth;
+  setWindowWidth(window.innerWidth);
+  if (curr != windowWidth) {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
-    onloadWidth = window.outerWidth;
+    onloadWidth = window.innerWidth;
   }
 });
 
