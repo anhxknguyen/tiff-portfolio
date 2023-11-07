@@ -20,7 +20,7 @@ const Artwork = ({ projectTitle, projectType, fileName }) => {
         transition: { delay: 0, duration: 0.25 },
       }}
       exit={{ opacity: 0, transition: { duration: 0.25 } }}
-      className="absolute top-0 left-0 w-screen h-full px-5 pt-10 overflow-scroll lg:no-scrollbar lg:pt-0 lg:overflow-scroll innerScreenHeight bg-artBg text-artTextColor"
+      className="absolute top-0 left-0 w-screen px-5 pt-10 overflow-scroll innerScreenHeight lg:no-scrollbar lg:pt-0 lg:overflow-scroll bg-artBg text-artTextColor"
     >
       <motion.div
         initial={{
