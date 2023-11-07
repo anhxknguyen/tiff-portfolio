@@ -30,7 +30,7 @@ export default {
         small: "25vh",
       },
       backgroundImage: {
-        tempBg: "url('./tempbg.png')",
+        tempBg: "url('./tempbg.PNG')",
       },
       height: {
         large: "75vh",

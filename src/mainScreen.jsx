@@ -29,7 +29,7 @@ function MainScreen() {
         transition: { delay: 0, duration: 0.5 },
       }}
       exit={{ opacity: 0, transition: { duration: 0.25 } }}
-      className="flex flex-col items-start h-full bg-cover font-textFont text-textColor lineartTempBg"
+      className="flex flex-col items-start h-full bg-cover font-textFont text-textColor bg-tempBg"
     >
       <UserContext.Provider
         value={{ project: project, setProject: setProject }}
