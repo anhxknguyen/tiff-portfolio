@@ -5,8 +5,10 @@ import MainScreen from "./mainScreen.jsx";
 import { HashRouter as BrowserRouter } from "react-router-dom";
 
 let vh = window.innerHeight * 0.01;
+let onloadWidth = window.innerWidth;
 document.documentElement.style.setProperty("--vh", `${vh}px`);
 window.addEventListener("resize", () => {
+  if (onloadWidth === window.innerWidth) return;
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
