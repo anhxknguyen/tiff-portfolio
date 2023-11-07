@@ -14,7 +14,7 @@ const About = () => {
       className="flex flex-col items-center h-full gap-10 my-10 overflow-scroll msm:my-15 md:my-20 lg:my-0 lg:gap-0 lg:flex-row lg:w-1/2 lg:justify-start lg:items-start lg:self-end lg:flex h-3/5 no-scrollbar"
     >
       <img
-        className="object-cover border select-none max-w-large lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:ml-10 lg:fixed sm:h-96 border-textColor lg:left-1/5 lg:top-1/2"
+        className="object-cover border select-none max-w-large lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:ml-10 lg:absolute sm:h-96 border-textColor lg:left-1/5 lg:top-1/2"
         src="./profile.jpg"
         alt="profile picture"
       />

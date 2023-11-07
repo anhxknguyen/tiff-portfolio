@@ -34,7 +34,7 @@ const Artwork = ({ projectTitle, projectType, fileName }) => {
       >
         <NavLink
           to="/"
-          className="lg:fixed lg:top-0 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:hover:text-textColor lg:hover:cursor-pointer lg:left-16 lg:top-10"
+          className="lg:absolute lg:top-0 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:hover:text-textColor lg:hover:cursor-pointer lg:left-16 lg:top-10"
         >
           {"<"} back
         </NavLink>
