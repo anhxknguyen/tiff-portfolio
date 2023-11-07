@@ -18,8 +18,8 @@ const About = () => {
         src="./profile.jpg"
         alt="profile picture"
       />
-      <div className="flex items-start justify-center h-1/5 lg:justify-start lg:items-center lg:h-full lg:w-2/3 lg:pb-20 lg:pl-14">
-        <p className="w-2/3 text-base sm:text-lg xl:text-xl lg:w-full">
+      <div className="flex items-start justify-center h-1/5 lg:justify-start lg:items-center lg:h-full lg:w-2/3 lg:pb-20">
+        <p className="w-2/3 text-base sm:text-lg xl:text-lg lg:w-full">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo
           donec enim diam vulputate ut pharetra sit. Nulla porttitor massa id

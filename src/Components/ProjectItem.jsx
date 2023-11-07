@@ -17,14 +17,6 @@ const ProjectItem = ({ projectTitle, projectType, fileName }) => {
     });
   }
 
-  function isTouchDevice() {
-    return (
-      "ontouchstart" in window ||
-      navigator.maxTouchPoints > 0 ||
-      navigator.msMaxTouchPoints > 0
-    );
-  }
-
   return (
     <div className="w-full h-full">
       <AnimatePresence>
@@ -46,14 +38,14 @@ const ProjectItem = ({ projectTitle, projectType, fileName }) => {
           )}
       </AnimatePresence>
       <NavLink
-        className="flex flex-col w-full gap-2 lg:gap-3 hover:text-hoverColor hover:cursor-pointer"
+        className="flex flex-col w-11/12 gap-1 lg:gap-2 hover:text-hoverColor hover:cursor-pointer"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
         to="/artwork"
         onClick={handleClick}
       >
-        <h1 className="text-3xl sm:text-5xl">{projectTitle}</h1>
-        <h2 className="text-lg sm:text-xl">{projectType}</h2>
+        <h1 className="text-3xl sm:text-4xl">{projectTitle}</h1>
+        <h2 className="text-lg sm:text-lg">{projectType}</h2>
       </NavLink>
     </div>
   );

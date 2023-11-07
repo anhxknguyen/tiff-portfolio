@@ -11,7 +11,7 @@ export default {
         textFont: ["textFont", "sans-serif"],
       },
       colors: {
-        textColor: "#6B4747",
+        textColor: "#291c1c",
         backgroundColor: "#FFFEFE",
         selectedColor: "#D67979",
         artBg: "#2B2222",
@@ -36,7 +36,10 @@ export default {
         large: "75vh",
         med: "50vh",
         small: "25vh",
-        preview: "26rem",
+        preview: "24rem",
+      },
+      width: {
+        navbar: "55%",
       },
       maxWidth: {
         image: "28rem",
