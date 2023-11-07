@@ -17,7 +17,7 @@ function MainScreen() {
   window.addEventListener("resize", () => {
     let currWidth = windowWidth;
     setWindowWidth(window.innerWidth);
-    if (curr != windowWidth) {
+    if (currWidth != windowWidth) {
       let vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty("--vh", `${vh}px`);
       onloadWidth = window.innerWidth;
