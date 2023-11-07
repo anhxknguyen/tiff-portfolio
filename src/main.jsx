@@ -6,8 +6,7 @@ import { HashRouter as BrowserRouter } from "react-router-dom";
 
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-screen.orientation.addEventListener("change", (event) => {
+window.addEventListener("resize", () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
