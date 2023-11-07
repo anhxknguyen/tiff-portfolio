@@ -1,14 +1,13 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { useHover } from "@uidotdev/usehooks";
 import { NavLink } from "react-router-dom";
 import { UserContext } from "../mainScreen";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 // eslint-disable-next-line react/prop-types
 const ProjectItem = ({ projectTitle, projectType, fileName }) => {
-  const [ref, hovering] = useHover();
   // eslint-disable-next-line no-unused-vars
   const { project, setProject } = useContext(UserContext);
+  const [isHovering, setIsHovering] = useState(false);
 
   function handleClick() {
     setProject({
@@ -29,7 +28,7 @@ const ProjectItem = ({ projectTitle, projectType, fileName }) => {
   return (
     <div className="w-full h-full">
       <AnimatePresence>
-        {hovering && isTouchDevice() == false && (
+        {isHovering && isTouchDevice() == false && (
           <motion.img
             initial={{
               opacity: 0,
@@ -47,7 +46,8 @@ const ProjectItem = ({ projectTitle, projectType, fileName }) => {
       </AnimatePresence>
       <NavLink
         className="flex flex-col w-full gap-2 lg:gap-3 hover:text-hoverColor hover:cursor-pointer"
-        ref={ref}
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
         to="/artwork"
         onClick={handleClick}
       >
