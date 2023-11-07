@@ -34,5 +34,5 @@ html,
 }
 
 .lineartTempBg {
-  background-image: url(./tempbg.PNG);
+  background-image: url("./tempbg.PNG");
 }
