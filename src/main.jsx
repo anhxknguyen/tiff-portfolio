@@ -7,14 +7,14 @@ import { HashRouter as BrowserRouter } from "react-router-dom";
 let vh = window.innerHeight * 0.01;
 let onloadWidth = 0;
 window.addEventListener("load", (event) => {
-  onloadWidth = window.innerWidth;
+  onloadWidth = window.outerWidth;
 });
 document.documentElement.style.setProperty("--vh", `${vh}px`);
 window.addEventListener("resize", () => {
-  if (window.innerWidth != onloadWidth) {
+  if (window.outerWidth != onloadWidth) {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
-    onloadWidth = window.innerWidth;
+    onloadWidth = window.outerWidth;
   }
 });
 
