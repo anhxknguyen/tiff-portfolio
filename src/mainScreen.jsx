@@ -10,6 +10,20 @@ import React from "react";
 export const UserContext = React.createContext(null);
 
 function MainScreen() {
+  let vh = window.innerHeight * 0.01;
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+  window.addEventListener("resize", () => {
+    let currWidth = windowWidth;
+    setWindowWidth(window.innerWidth);
+    if (curr != windowWidth) {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+      onloadWidth = window.innerWidth;
+    }
+  });
+
   const location = useLocation();
   if (JSON.parse(localStorage.getItem("project")) === null) {
     var [project, setProject] = useState({});
