@@ -28,21 +28,22 @@ const ProjectItem = ({ projectTitle, projectType, fileName }) => {
   return (
     <div className="w-full h-full">
       <AnimatePresence>
-        {isHovering && isTouchDevice() == false && (
-          <motion.img
-            initial={{
-              opacity: 0,
-            }}
-            animate={{
-              opacity: 1,
-              transition: { delay: 0, duration: 0.5 },
-            }}
-            exit={{ opacity: 0, transition: { duration: 0.25 } }}
-            className="fixed hidden object-cover ml-10 transform -translate-x-1/2 -translate-y-1/2 border select-none lg:block lg:h-preview lg:max-w-preview hover:cursor-default border-textColor w-image left-1/5 top-1/2"
-            src={fileName}
-            alt={projectTitle}
-          />
-        )}
+        {isHovering &&
+          window.matchMedia("(pointer: coarse)").matches == false && (
+            <motion.img
+              initial={{
+                opacity: 0,
+              }}
+              animate={{
+                opacity: 1,
+                transition: { delay: 0, duration: 0.5 },
+              }}
+              exit={{ opacity: 0, transition: { duration: 0.25 } }}
+              className="fixed hidden object-cover ml-10 transform -translate-x-1/2 -translate-y-1/2 border select-none lg:block lg:h-preview lg:max-w-preview hover:cursor-default border-textColor w-image left-1/5 top-1/2"
+              src={fileName}
+              alt={projectTitle}
+            />
+          )}
       </AnimatePresence>
       <NavLink
         className="flex flex-col w-full gap-2 lg:gap-3 hover:text-hoverColor hover:cursor-pointer"
