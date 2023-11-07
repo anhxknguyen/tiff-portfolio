@@ -12,16 +12,21 @@ export const UserContext = React.createContext(null);
 function MainScreen() {
   let vh = window.innerHeight * 0.01;
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  var timeoutFunction;
+
+  const conditionalResize = () => {
+    if (currWidth != windowWidth) {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+    }
+  };
 
   document.documentElement.style.setProperty("--vh", `${vh}px`);
   window.addEventListener("resize", () => {
     let currWidth = windowWidth;
     setWindowWidth(window.innerWidth);
-    if (currWidth != windowWidth) {
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
-      onloadWidth = window.innerWidth;
-    }
+    clearTimeout(timeoutFunction);
+    timeoutFunction = setTimeout(conditionalResize, 500);
   });
 
   const location = useLocation();
