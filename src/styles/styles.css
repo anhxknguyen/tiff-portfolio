@@ -4,8 +4,8 @@
 
 html,
 .innerScreenHeight {
+  height: 100vh;
   height: 100svh;
-  /* height: calc(var(--vh, 1vh) * 100); */
 }
 
 @font-face {
