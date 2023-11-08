@@ -11,12 +11,12 @@ export default {
         textFont: ["textFont", "sans-serif"],
       },
       colors: {
-        textColor: "#291c1c",
+        textColor: "#0d0909",
         backgroundColor: "#FFFEFE",
         selectedColor: "#D67979",
         artBg: "#2B2222",
         hoverColor: "#F6B8B8",
-        artTextColor: "#F8E4E4",
+        artTextColor: "#faebeb",
       },
       flexGrow: {
         2: "2",
