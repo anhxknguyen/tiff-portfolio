@@ -43,12 +43,23 @@ const Navbar = ({ current }) => {
               Portfolio
             </NavLink>
           )}
-          <NavLink
-            className={isTouchDevice() == false && `hover:text-selectedColor`}
-            to="/contact"
-          >
-            Contact
-          </NavLink>
+          {current === "/contact" ? (
+            <NavLink
+              to="/contact"
+              className={`line-through ${
+                isTouchDevice() === false && "hover:text-selectedColor"
+              }`}
+            >
+              Contact
+            </NavLink>
+          ) : (
+            <NavLink
+              to="/contact"
+              className={isTouchDevice() == false && `hover:text-selectedColor`}
+            >
+              Contact
+            </NavLink>
+          )}
         </ul>
       </div>
     </div>
