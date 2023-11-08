@@ -44,8 +44,8 @@ const ProjectItem = ({ projectTitle, projectType, fileName }) => {
         onClick={handleClick}
         className="flex flex-col items-center h-full gap-1 py-5 lg:items-start lg:w-3/4 lg:pl-32 lg:gap-2 hover:text-hoverColor hover:cursor-pointer"
       >
-        <h1 className="text-3xl sm:text-4xl">{projectTitle}</h1>
-        <h2 className="text-lg">{projectType}</h2>
+        <h1 className="text-3xl sm:text-4xl xl:text-5xl">{projectTitle}</h1>
+        <h2 className="text-lg lg:text-xl">{projectType}</h2>
       </NavLink>
     </div>
   );
