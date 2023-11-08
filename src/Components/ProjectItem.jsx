@@ -1,21 +1,11 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { NavLink } from "react-router-dom";
-import { UserContext } from "../mainScreen";
-import { useContext, useState } from "react";
+import { useState } from "react";
 
 // eslint-disable-next-line react/prop-types
-const ProjectItem = ({ projectTitle, projectType, fileName }) => {
+const ProjectItem = ({ projectTitle, projectType, fileName, path }) => {
   // eslint-disable-next-line no-unused-vars
-  const { project, setProject } = useContext(UserContext);
   const [isHovering, setIsHovering] = useState(false);
-
-  function handleClick() {
-    setProject({
-      projectTitle: projectTitle,
-      projectType: projectType,
-      fileName: fileName,
-    });
-  }
 
   return (
     <div className="w-full h-full">
@@ -40,8 +30,7 @@ const ProjectItem = ({ projectTitle, projectType, fileName }) => {
       <NavLink
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
-        to="/artwork"
-        onClick={handleClick}
+        to={path}
         className="flex flex-col items-center h-full gap-1 py-5 lg:items-start lg:w-3/4 lg:pl-32 lg:gap-2 hover:text-hoverColor hover:cursor-pointer"
       >
         <h1 className="text-3xl sm:text-4xl xl:text-5xl">{projectTitle}</h1>

@@ -1,50 +1,7 @@
 import ProjectItem from "../Components/ProjectItem";
 import { motion } from "framer-motion";
 
-const Portfolio = () => {
-  const projectsList = [
-    {
-      projectTitle: "Spring Day",
-      projectType: "Original Work",
-      fileName: "./spring-day.png",
-    },
-    {
-      projectTitle: "Paper Cranes",
-      projectType: "Original Work",
-      fileName: "./paper-cranes.png",
-    },
-    {
-      projectTitle: "Venti",
-      projectType: "Fanart/Commission",
-      fileName: "./venti.PNG",
-    },
-    {
-      projectTitle: "Miya Twins",
-      projectType: "Fanart",
-      fileName: "./miya-twins.png",
-    },
-    {
-      projectTitle: "Kokomi",
-      projectType: "Fanart",
-      fileName: "./kokomi.png",
-    },
-    {
-      projectTitle: "Hanni",
-      projectType: "Fanart",
-      fileName: "./hanni.jpg",
-    },
-    {
-      projectTitle: "Samantha",
-      projectType: "Draft",
-      fileName: "./orange-justice.PNG",
-    },
-    {
-      projectTitle: "Butterfly",
-      projectType: "Draft",
-      fileName: "./butterfly.png",
-    },
-  ];
-
+const Portfolio = ({ projectsList }) => {
   return (
     <motion.div
       initial={{
@@ -58,12 +15,13 @@ const Portfolio = () => {
       className="flex items-start justify-center w-full h-full py-5 overflow-scroll text-center lg:justify-start lg:py-16 lg:w-1/2 lg:text-start no-scrollbar"
     >
       <ul className="flex flex-col items-center lg:w-full">
-        {projectsList.map((project, index) => (
+        {projectsList.map((projectsList, index) => (
           <ProjectItem
             key={index}
-            projectTitle={project.projectTitle}
-            projectType={project.projectType}
-            fileName={project.fileName}
+            projectTitle={projectsList.projectTitle}
+            projectType={projectsList.projectType}
+            fileName={projectsList.fileName}
+            path={projectsList.path}
           />
         ))}
       </ul>
