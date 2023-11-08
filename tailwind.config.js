@@ -23,6 +23,10 @@ export default {
       },
       spacing: {
         "1/5": "20%",
+        "6/10": "60%",
+        "6.5/10": "65%",
+        "7/10": "70%",
+        "7.5/10": "75%",
         "5/6": "83%",
         veryLarge: "95vh",
         large: "75vh",
@@ -36,10 +40,10 @@ export default {
         large: "75vh",
         med: "50vh",
         small: "25vh",
-        preview: "24rem",
+        preview: "28rem",
       },
       width: {
-        navbar: "55%",
+        navbar: "50%",
       },
       maxWidth: {
         image: "28rem",

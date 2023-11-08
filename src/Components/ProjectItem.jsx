@@ -31,21 +31,21 @@ const ProjectItem = ({ projectTitle, projectType, fileName }) => {
                 transition: { delay: 0, duration: 0.5 },
               }}
               exit={{ opacity: 0, transition: { duration: 0.25 } }}
-              className="fixed hidden object-cover ml-10 transform -translate-x-1/2 -translate-y-1/2 border select-none lg:block lg:h-preview lg:max-w-preview hover:cursor-default border-textColor w-image left-1/5 top-1/2"
+              className="fixed hidden object-cover ml-10 transform -translate-x-1/2 -translate-y-1/2 border select-none lg:block lg:h-preview lg:max-w-preview hover:cursor-default border-textColor w-image lg:left-6.5/10 top-1/2"
               src={fileName}
               alt={projectTitle}
             />
           )}
       </AnimatePresence>
       <NavLink
-        className="flex flex-col w-11/12 gap-1 lg:gap-2 hover:text-hoverColor hover:cursor-pointer"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
         to="/artwork"
         onClick={handleClick}
+        className="flex flex-col items-center h-full gap-1 py-5 lg:items-start lg:w-3/4 lg:pl-32 lg:gap-2 hover:text-hoverColor hover:cursor-pointer"
       >
         <h1 className="text-3xl sm:text-4xl">{projectTitle}</h1>
-        <h2 className="text-lg sm:text-lg">{projectType}</h2>
+        <h2 className="text-lg">{projectType}</h2>
       </NavLink>
     </div>
   );

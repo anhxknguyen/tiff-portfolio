@@ -11,15 +11,21 @@ const About = () => {
         transition: { delay: 0, duration: 0.5 },
       }}
       exit={{ opacity: 0, transition: { duration: 0.25 } }}
-      className="flex flex-col items-center h-full gap-10 my-10 overflow-scroll msm:my-15 md:my-20 lg:my-0 lg:gap-0 lg:flex-row lg:w-1/2 lg:justify-start lg:items-start lg:self-end lg:flex h-3/5 no-scrollbar"
+      className="flex flex-col items-center h-full gap-10 my-10 overflow-scroll msm:my-15 lg:my-0 lg:pb-20 lg:gap-10 lg:w-1/2 lg:pl-20 lg:justify-center lg:items-start lg:self-start lg:flex no-scrollbar"
     >
+      <h1 className="text-4xl text-center lg:hidden">
+        Tiffany<br></br>Xiang
+      </h1>
       <img
-        className="object-cover border select-none max-w-large lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:ml-10 lg:fixed sm:h-96 border-textColor lg:left-1/5 lg:top-1/2"
         src="./profile.jpg"
         alt="profile picture"
+        className="object-cover border select-none max-w-large lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:ml-10 lg:fixed sm:h-preview border-textColor lg:left-6.5/10 lg:top-1/2"
       />
-      <div className="flex items-start justify-center h-1/5 lg:justify-start lg:items-center lg:h-full lg:w-2/3 lg:pb-20">
-        <p className="w-2/3 text-base sm:text-lg xl:text-lg lg:w-full">
+      <h1 className="hidden text-7xl lg:block">
+        Tiffany<br></br> <span className="pl-20">Xiang</span>
+      </h1>
+      <div className="flex items-start justify-center h-fit lg:justify-start lg:items-center lg:w-4/5">
+        <p className="w-2/3 text-base sm:text-lg lg:w-full">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo
           donec enim diam vulputate ut pharetra sit. Nulla porttitor massa id
