@@ -31,7 +31,7 @@ const ProjectItem = ({ projectTitle, projectType, fileName }) => {
                 transition: { delay: 0, duration: 0.5 },
               }}
               exit={{ opacity: 0, transition: { duration: 0.25 } }}
-              className="fixed hidden object-cover ml-10 transform -translate-x-1/2 -translate-y-1/2 border select-none lg:block lg:h-preview lg:max-w-preview hover:cursor-default border-textColor w-image lg:left-6.5/10 top-1/2"
+              className="fixed hidden object-cover ml-10 transform -translate-x-1/2 -translate-y-1/2 border select-none lg:block lg:h-preview xl:h-preview-xl lg:max-w-preview hover:cursor-default border-textColor w-image lg:left-6.5/10 top-1/2"
               src={fileName}
               alt={projectTitle}
             />

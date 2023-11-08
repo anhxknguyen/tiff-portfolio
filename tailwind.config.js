@@ -41,6 +41,7 @@ export default {
         med: "50vh",
         small: "25vh",
         preview: "28rem",
+        "preview-xl": "30rem",
       },
       width: {
         navbar: "50%",
