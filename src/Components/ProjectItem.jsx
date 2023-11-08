@@ -6,6 +6,9 @@ import { useState } from "react";
 const ProjectItem = ({ projectTitle, projectType, fileName, path }) => {
   // eslint-disable-next-line no-unused-vars
   const [isHovering, setIsHovering] = useState(false);
+  function isTouchDevice() {
+    return window.matchMedia("(pointer: coarse)").matches;
+  }
 
   return (
     <div className="w-full h-full">
@@ -31,7 +34,9 @@ const ProjectItem = ({ projectTitle, projectType, fileName, path }) => {
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
         to={path}
-        className="flex flex-col items-center h-full gap-1 py-5 lg:items-start lg:w-3/4 lg:pl-32 lg:gap-2 hover:text-hoverColor hover:cursor-pointer"
+        className={`flex flex-col items-center h-full gap-1 py-5 lg:items-start lg:w-3/4 lg:pl-32 lg:gap-2 ${
+          isTouchDevice() == false && "hover:text-selectedColor"
+        } hover:cursor-pointer`}
       >
         <h1 className="text-3xl sm:text-4xl xl:text-5xl">{projectTitle}</h1>
         <h2 className="text-lg lg:text-xl">{projectType}</h2>

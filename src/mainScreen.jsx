@@ -5,6 +5,7 @@ import { Route, useLocation, Routes } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import Artwork from "./Components/Artwork";
 import React from "react";
+import Contact from "./Pages/Contact";
 
 function MainScreen() {
   const location = useLocation();
@@ -77,6 +78,7 @@ function MainScreen() {
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Portfolio projectsList={projectsList} />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           {projectsList.map((projectsList, index) => (
             <Route
               key={index}

@@ -3,13 +3,8 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = ({ current }) => {
   function isTouchDevice() {
-    return (
-      "ontouchstart" in window ||
-      navigator.maxTouchPoints > 0 ||
-      navigator.msMaxTouchPoints > 0
-    );
+    return window.matchMedia("(pointer: coarse)").matches;
   }
-
   return (
     <div className="flex flex-col items-center justify-between block w-full mt-5 lg:mt-8 lg:flex-row">
       <div className="flex justify-center w-full h-full lg:justify-end lg:flex-row lg:w-navbar lg:self-start">
@@ -50,8 +45,9 @@ const Navbar = ({ current }) => {
           )}
           <NavLink
             className={isTouchDevice() == false && `hover:text-selectedColor`}
+            to="/contact"
           >
-            Resume
+            Contact
           </NavLink>
         </ul>
       </div>
