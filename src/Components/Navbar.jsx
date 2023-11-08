@@ -13,7 +13,7 @@ const Navbar = ({ current }) => {
   return (
     <div className="flex flex-col items-center justify-between block w-full mt-5 lg:mt-8 lg:flex-row">
       <div className="flex justify-center w-full h-full lg:justify-end lg:flex-row lg:w-navbar lg:self-start">
-        <ul className="flex justify-center w-full gap-10 pb-2 pl-0 border-b sm:text-lg lg:text-3xl lg:w-11/12 lg:justify-start lg:self-end border-textColor h-fit">
+        <ul className="flex justify-center w-full gap-10 pb-2 pl-0 border-b sm:text-lg lg:text-2xl lg:w-11/12 lg:justify-start lg:self-end border-textColor h-fit">
           {current === "/about" ? (
             <NavLink
               to="/about"
